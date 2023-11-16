@@ -1,7 +1,6 @@
+import java.util.*;
 public class practice {
-/*1. Write a program to print whether a number is even or odd, also take
-input from the user.
-2. Take name as input and print a greeting message for that particular name.
+/*
 3. Write a program to input principal, time, and rate (P, T, R) from the user and
 find Simple Interest.
 4. Take in two numbers and an operator (+, -, *, /) and calculate the value.
@@ -12,6 +11,23 @@ find Simple Interest.
 8. To find out whether the given String is Palindrome or not.
 9. To find Armstrong Number between two given number. */
     public static void main(String[] args){
-    
+    // 1. Write a program to print whether a number is even or odd, also take input from the user.
+
+        System.out.print("Enter the number: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a%2==0){
+            System.out.println("Number is Even");
+        }
+        else
+            System.out.println("Number is Odd");
+            
+            // 2. Take name as input and print a greeting message for that particular name.
+            System.out.print("Enter the Name: ");
+            String name = sc.next();
+            System.out.println("Good Morning "+ name);
+            
+            
+        sc.close();
     }
-}
+} 
