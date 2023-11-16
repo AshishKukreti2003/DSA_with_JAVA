@@ -3,7 +3,7 @@ import java.util.*;
 public class practice {
     /*
      * 
-     * 4. Take in two numbers and an operator (+, -, *, /) and calculate the value.
+     * 
      * (Use if conditions)
      * 5. Take 2 numbers as input and print the largest number.
      * 6. Input currency in rupees and output in USD.
@@ -39,7 +39,17 @@ public class practice {
         int rate = sc.nextInt();
 
         double SI = (prin * rate * time) / 100;
-        System.out.print("The Simple Interest is: " + SI);
+        System.out.println("The Simple Interest is: " + SI);
+
+        // 4. Take in two numbers and an operator (+, -, *, /) and calculate the value.
+        System.out.println("Enter the 1st number: ");
+        int num1 = sc.nextInt();
+        System.out.println("Enter the 2nd number: ");
+        int num2 = sc.nextInt();
+        System.out.println("The + is: " + (num1 + num2));
+        System.out.println("The - is: " + (num1 - num2));
+        System.out.println("The * is: " + (num1 * num2));
+        System.out.println("The / is: " + (num1 / num2));
 
         sc.close();
     }
