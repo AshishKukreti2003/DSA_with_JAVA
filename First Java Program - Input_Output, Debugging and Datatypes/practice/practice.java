@@ -64,7 +64,18 @@ public class practice {
         double usd = rupee/85;
         System.out.println("USD of "+ rupee + "rupees is $"+usd);
 
-        
+        // 7. To calculate Fibonacci Series up to n numbers.
+        System.out.println("Enter the number: ");
+        int op = sc.nextInt();
+        int sum =0;
+        int e=0,f=1;
+        for(int i=0;i<=op;i++){
+            System.out.print(e+" ");
+            sum = e+f;
+            e=f;
+            f=sum;
+
+        }
 
         
         sc.close();
