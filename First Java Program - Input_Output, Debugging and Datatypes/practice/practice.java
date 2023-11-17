@@ -2,12 +2,9 @@ import java.util.*;
 
 public class practice {
     /*
+     *
      * 
      * 
-     * (Use if conditions)
-     * 5. Take 2 numbers as input and print the largest number.
-     * 6. Input currency in rupees and output in USD.
-     * 7. To calculate Fibonacci Series up to n numbers.
      * 8. To find out whether the given String is Palindrome or not.
      * 9. To find Armstrong Number between two given number.
      */
@@ -32,25 +29,44 @@ public class practice {
         // and find Simple Interest.
         /* SI = (P*R*T)/100 */
         System.out.print("Enter the principal amount: ");
-        int prin = sc.nextInt();
+        double prin = sc.nextDouble();
         System.out.print("Enter the time: ");
-        int time = sc.nextInt();
+        double time = sc.nextDouble();
         System.out.print("Enter the rate: ");
-        int rate = sc.nextInt();
+        double rate = sc.nextDouble();
 
         double SI = (prin * rate * time) / 100;
         System.out.println("The Simple Interest is: " + SI);
 
         // 4. Take in two numbers and an operator (+, -, *, /) and calculate the value.
-        System.out.println("Enter the 1st number: ");
+        System.out.print("Enter the 1st number: ");
         int num1 = sc.nextInt();
-        System.out.println("Enter the 2nd number: ");
+        System.out.print("Enter the 2nd number: ");
         int num2 = sc.nextInt();
         System.out.println("The + is: " + (num1 + num2));
         System.out.println("The - is: " + (num1 - num2));
         System.out.println("The * is: " + (num1 * num2));
         System.out.println("The / is: " + (num1 / num2));
 
+        // 5. Take 2 numbers as input and print the largest number.
+        System.out.print("Enter the 1st number: ");
+        int x = sc.nextInt();
+        System.out.print("Enter the 2nd number: ");
+        int y = sc.nextInt();
+        if (x > y) {
+            System.out.println("Largest number is: " + x);
+        } else
+            System.out.println("Largest number is: " + y);
+        
+        // 6. Input currency in rupees and output in USD.
+        System.out.print("Enter the rupees: ");
+        double rupee = sc.nextDouble();
+        double usd = rupee/85;
+        System.out.println("USD of "+ rupee + "rupees is $"+usd);
+
+        
+
+        
         sc.close();
     }
 }
