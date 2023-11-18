@@ -1,13 +1,6 @@
 import java.util.*;
 
 public class practice {
-    /*
-     *
-     * 
-     * 
-     * 8. To find out whether the given String is Palindrome or not.
-     * 9. To find Armstrong Number between two given number.
-     */
     public static void main(String[] args) {
         // 1. Write a program to print whether a number is even or odd, also take input
         // from the user.
@@ -57,27 +50,30 @@ public class practice {
             System.out.println("Largest number is: " + x);
         } else
             System.out.println("Largest number is: " + y);
-        
+
         // 6. Input currency in rupees and output in USD.
         System.out.print("Enter the rupees: ");
         double rupee = sc.nextDouble();
-        double usd = rupee/85;
-        System.out.println("USD of "+ rupee + "rupees is $"+usd);
+        double usd = rupee / 85;
+        System.out.println("USD of " + rupee + "rupees is $" + usd);
 
         // 7. To calculate Fibonacci Series up to n numbers.
         System.out.println("Enter the number: ");
         int op = sc.nextInt();
-        int sum =0;
-        int e=0,f=1;
-        for(int i=0;i<=op;i++){
-            System.out.print(e+" ");
-            sum = e+f;
-            e=f;
-            f=sum;
-
+        int sum = 0;
+        int e = 0, f = 1;
+        for (int i = 0; i <= op; i++) {
+            System.out.print(e + " ");
+            sum = e + f;
+            e = f;
+            f = sum;
         }
 
+        // 8. To find out whether the given String is Palindrome or not.
         
+
+        // 9. To find Armstrong Number between two given number.
+
         sc.close();
     }
 }
