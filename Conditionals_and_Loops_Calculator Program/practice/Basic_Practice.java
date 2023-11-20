@@ -1,6 +1,4 @@
-import java.util.*;
-
-public class Practice {
+public class Basic_Practice {
     public static void main(String[] args){
         
 // 1. Area Of Circle Java Program
