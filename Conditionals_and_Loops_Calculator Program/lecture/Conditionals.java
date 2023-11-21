@@ -1,5 +1,5 @@
 
-public class Cpnditionals {
+public class Conditionals {
     public static void main(String[] args){
         int salary = 20000;
 
