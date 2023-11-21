@@ -59,12 +59,13 @@ public class Practice {
 // 7. To calculate Fibonacci Series up to n numbers.
         System.out.println("Enter the number: ");
         int op = sc.nextInt();
+        int temp = 0;
         int e = 0, f = 1;
         for (int i = 0; i <= op; i++) {
-            System.out.print(f +" ");
-            int temp = f;
-            f += e;
-            e = temp;
+            System.out.print(e + " ");
+            temp = e + f;
+            e = f;
+            f = temp;
         }
 // 7.(i) Print nth number of fibonacci series
 
@@ -100,8 +101,22 @@ public class Practice {
         // else
         //     System.out.println(org_str+ " is not a Palindrome String");
 
-        // 9. To find Armstrong Number between two given number.
-
+// 9. To find Armstrong Number between two given number.
+        System.out.print("Enter the first number: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = sc.nextInt();
+        for(int i=num1;i<num2;i++){
+            int check = i, rem, sum=0;
+            while(check != 0){
+                rem = check%10;
+                sum += rem*rem*rem;
+                check = check/10;
+            }
+            if(sum ==i){
+                System.out.println(i+" is a Armstrong number");
+            }
         sc.close();
+        }
     }
 }
