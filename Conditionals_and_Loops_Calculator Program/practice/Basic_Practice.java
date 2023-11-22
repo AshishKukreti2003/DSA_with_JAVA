@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class Basic_Practice {
     public static void main(String[] args){
-        
+        Scanner sc = new Scanner(System.in);
 // 1. Area Of Circle Java Program
         // int radius_of_circle = 5;
         // double area_of_circle = Math.PI*radius_of_circle*radius_of_circle;
@@ -79,17 +81,18 @@ public class Basic_Practice {
         // double volume_of_cone = (Math.PI*radius*radius*height)/3;
         // System.out.println("Volume of Cone is: "+ volume_of_cone);
 
-// 15. Volume Of Prism
-        
+// 15. Fibonacci Series In Java Programs
+        System.out.print("Enter the number: ");
+        int num = sc.nextInt();
+        int a= 0,b=1,temp;
+        for(int i=0;i<=num;i++){
+                System.out.println(a+" ");
+                temp = a+b;
+                a=b;
+                b=temp;
+        }
+
 
 
     }
 }
-/*
- * 16. Volume Of Cylinder
- * 17. Volume Of Sphere
- * 18. Volume Of Pyramid
- * 19. Curved Surface Area Of Cylinder
- * 20. Total Surface Area Of Cube
- * 21. Fibonacci Series In Java Programs
- */
