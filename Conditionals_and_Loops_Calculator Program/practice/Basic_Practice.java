@@ -82,17 +82,53 @@ public class Basic_Practice {
         // System.out.println("Volume of Cone is: "+ volume_of_cone);
 
 // 15. Fibonacci Series In Java Programs
-        System.out.print("Enter the number: ");
-        int num = sc.nextInt();
-        int a= 0,b=1,temp;
-        for(int i=0;i<=num;i++){
-                System.out.println(a+" ");
-                temp = a+b;
-                a=b;
-                b=temp;
+        // System.out.print("Enter the number: ");
+        // int num = sc.nextInt();
+        // int a= 0,b=1,temp;
+        // for(int i=0;i<=num;i++){
+        //         System.out.println(a+" ");
+        //         temp = a+b;
+        //         a=b;
+        //         b=temp;
+        // }
+
+// 16. Input a number and print all the factors of that number (use loops).
+        // System.out.print("Enter the input: ");
+        // int input = sc.nextInt();
+        // for(int i=1;i<=input;i++){
+        //         if(input%i==0){
+        //                 System.out.print(i+" ");
+        //         }
+        // }
+        
+// 17. Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+        // int sum =0;
+        // int number;
+        // System.out.println("Enter zero(0) to stop");
+        // do{
+        //         System.out.println("Enter the number: ");
+        //         number = sc.nextInt();
+        //         sum+=number;
+        // }while(number!=0);
+        // System.out.print("The sum of all numbers is: "+ sum);
+
+// 18. Take integer inputs till the user enters 0 and print the largest number from all.
+       int largest = Integer.MIN_VALUE;
+       int number;
+       System.out.println("Enter zero(0) to stop");
+       do{
+                System.out.println("Enter the number: ");
+                number= sc.nextInt();
+                if(number>largest && number!=0){
+                        largest=number;
+                }
+       }while(number!=0);
+
+        // System.out.println("The largest number is: "+ largest);
+        if (largest != Integer.MIN_VALUE) {
+                System.out.println("The largest number entered is: " + largest);
+        } else {
+                System.out.println("No valid number entered.");
         }
-
-
-
     }
 }
