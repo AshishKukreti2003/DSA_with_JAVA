@@ -130,5 +130,7 @@ public class Basic_Practice {
         } else {
                 System.out.println("No valid number entered.");
         }
+
+        sc.close();
     }
 }
