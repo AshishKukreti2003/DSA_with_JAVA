@@ -12,14 +12,6 @@ This repository aims to provide comprehensive implementations and explanations o
 - **Explanation and Examples:** Detailed explanations of each implementation with examples.
 - **Java Code:** All implementations are written in Java, making it easier for Java developers to understand and learn.
 
-## Folder Structure
-
-The repository is structured as follows:
-
-- **/DataStructures:** Contains implementations of various data structures.
-- **/Algorithms:** Includes implementations of different algorithms.
-- **/Utils:** Helper classes or utility functions used across implementations.
-
 ## Getting Started
 
 To use this repository:
@@ -42,6 +34,7 @@ Contributions are welcome! Here's how you can contribute:
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 - [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
 - [LeetCode](https://leetcode.com/)
+- [Youtube](https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)
 
 ## Acknowledgements
 
