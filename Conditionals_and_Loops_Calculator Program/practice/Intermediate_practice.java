@@ -96,12 +96,81 @@ public class Intermediate_practice {
         //     System.out.println(result+" is not a Armstrong number");
 
 //  10. Find Ncr & Npr
-        System.out.print("Enter the value of n: ");
+        // System.out.println("nPr");
+        // System.out.print("Enter the value of n: ");
+        // int n = sc.nextInt();
+        // System.out.print("Enter the value of r: ");
+        // int r = sc.nextInt();
+        // int count =1;
+        // int mul_a =1;
+        // int mul_b = 1;
+        // int n_minus_r = n-r;
+        // while(n>=count){
+        //         mul_a*=count;
+        //         count++;
+        // }
+        // System.out.println(mul_a);
+        // count =1;
+        // while (n_minus_r>=count) {
+        //         mul_b*=count;
+        //         count++;
+        // }
+        // System.out.println(mul_b);
+        // int result = mul_a/mul_b;
+        // System.out.println(result);
+        // int result =1;
+        // int count =1;
+        // while(num>=count){
+        // result*=count;
+        // count++;
+        // }
+        // System.out.println(result);
+
+        // System.out.println("nCr");
+        // System.out.println("Enter the value of n: ");
+        // int n_1 = sc.nextInt();
+        // System.out.println("Enter the value of r: ");
+        // int r_1 = sc.nextInt();
+        // int mul_a=1, mul_b = 1, mul_r=1;
+        // int count = 1;
+        // int n_minus_r_a = n_1 - r_1;
+        // while (n_1>=count) {
+        //         mul_a*=count;
+        //         count++;
+        // }
+
+        // count = 1;
+        // while (n_minus_r_a>=count) {
+        //         mul_b*=count;
+        //         count++;
+        // }
+        // count = 1;
+        // while (r_1>=count) {
+        //         mul_r*=count;
+        //         count++;
+        // }
+
+        // int down = mul_r*mul_b;
+        // int result_a = mul_a/down;
+        // System.out.println(result_a);
+
+// 11. Find if a number is palindrome or not
+        System.out.println("Enter the number");
         int n = sc.nextInt();
-        System.out.print("Enter the value of r: ");
-        int r = sc.nextInt();
+        int result = 0;
+        int org = n;
+        while (n>0) {
+                int rem = n%10;
+                result = result*10+rem;
+                n/=10;   
+        }
 
-
+        if(org == result){
+                System.out.println("Number is palindrome number");
+        }
+        else
+                System.out.println("Number is not palindrome number");
+        
 
 
         sc.close();
@@ -109,8 +178,7 @@ public class Intermediate_practice {
 }
 
 /*
- * 16. Reverse A String In Java
- * 17. Find if a number is palindrome or not
+ * 17. 
  * 18. Future Investment Value
  * 19. HCF Of Two Numbers Program
  * 20. LCM Of Two Numbers
