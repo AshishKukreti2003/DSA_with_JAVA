@@ -227,18 +227,69 @@ public class Intermediate_practice {
         //         System.out.println("Not a perfect number");
 
 // 16. Check Leap Year Or Not
-        
+        // System.out.print("Enter the year: ");
+        // int year = sc.nextInt();
+        // if(year%4 == 0 && year%100 != 0 || year%400==0){
+        //         System.out.println("Leap year");
+        // }
+        // else
+        //         System.out.println("Not a leap year ");
+
+// 17. Sum Of A Digits Of Number
+        // System.out.print("Enter the number: ");
+        // int num = sc.nextInt();
+        // int sum = 0;
+        // int rem;
+        // while (num>0) {
+        //         rem = num%10;
+        //         sum+=rem;
+        //         num/=10;
+        // }
+        // System.out.println("Sum of digits of number is: "+ sum);
+
+// 18. Kunal is allowed to go out with his friends only on the even days of a given month. Write a program to count the number of days he can go out in the month of August.
+        // int days_in_august = 31;
+        // int count = 1;
+        // int result=0;
+        // int a;
+
+        // while (days_in_august>=count) {
+        //         if(count%2==0){
+        //                 a=1;
+        //                 result+=a;
+        //         }
+                
+        //         count++;
+        // }
+        // System.out.println(result);
+
+// 19. Write a program to print the sum of negative numbers, sum of positive even numbers and the sum of positive odd numbers from a list of numbers (N) entered by the user. The list terminates when the user enters a zero.
+        System.out.print("Enter the number: ");
+        int N = sc.nextInt();
+        int sum_of_negative_number = 0;
+        int sum_of_positive_even_number = 0;
+        int sum_of_positive_odd_number = 0;
+        while (N!=0) {
+                
+                if(N<0){
+                        sum_of_negative_number +=N;
+                }
+                else if(N>0 && N%2==0){
+                        sum_of_positive_even_number+=N;
+                }
+                else{
+                        sum_of_positive_odd_number+=N;
+                }
+                System.out.print("Enter the number: ");
+                N = sc.nextInt();
+                        
+        }
+        System.out.println("Sum of negative number: "+ sum_of_negative_number);
+        System.out.println("Sum of positive even number: "+ sum_of_positive_even_number);
+        System.out.println("Sum of positive odd number: "+ sum_of_positive_odd_number);
+
         sc.close();
     }
 }
 
-/*
- * 23. 
- * 24. Sum Of A Digits Of Number
- * 25. Kunal is allowed to go out with his friends only on the even days of a
- * given month. Write a program to count the number of days he can go out in the
- * month of August.
- * 26. Write a program to print the sum of negative numbers, sum of positive
- * even numbers and the sum of positive odd numbers from a list of numbers (N)
- * entered by the user. The list terminates when the user enters a zero.
- */
+
