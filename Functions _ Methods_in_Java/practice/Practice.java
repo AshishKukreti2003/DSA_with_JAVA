@@ -1,22 +1,106 @@
+import java.util.Scanner;
+
 public class Practice {
     public static void main(String[] args) {
-        
+        Scanner sc = new Scanner(System.in);
+// 1. [Define two methods to print the maximum and the minimum number respectively among three numbers entered by the user.](https://www.java67.com/2019/05/how-to-find-largest-and-smallest-of-three-numbers-in-java.html)
+        // System.out.print("Enter the first number: ");
+        // int a = sc.nextInt();
+        // System.out.print("Enter the second number: ");
+        // int b = sc.nextInt();
+        // System.out.print("Enter the third number: ");
+        // int c = sc.nextInt();
+        // max(a,b,c);
+        // min(a, b, c);
+
+// 2. [Define a program to find out whether a given number is even or odd.](https://www.geeksforgeeks.org/java-program-to-check-if-a-given-integer-is-odd-or-even/)
+        // System.out.print("Enter the number: ");
+        // int a = sc.nextInt();
+        // evenORodd(a);
+
+// 3. [A person is eligible to vote if his/her age is greater than or equal to 18. Define a method to find out if he/she is eligible to vote.](https://www.efaculty.in/java-programs/voting-age-program-in-java/)
+        // System.out.print("Enter your Age: ");
+        // int age = sc.nextInt();
+        // eligible(age);
+
+// 4. [Write a program to print the sum of two numbers entered by user by defining your own method.](https://code4coding.com/addition-of-two-numbers-in-java-using-method/)
+        // System.out.print("Enter the 1st number: ");
+        // int num1 = sc.nextInt();
+        // System.out.print("Enter the 1st number: ");
+        // int num2 = sc.nextInt();
+        // int sum_ = sum(num1, num2);
+        // System.out.println("Sum of "+num1+" and "+num2+" is: "+sum_);
+
+// 5. [Define a method that returns the product of two numbers entered by user.](https://code4coding.com/java-program-to-multiply-two-numbers-using-method/)
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // int result = product(a, b);
+        // System.out.println("Product of "+a+ " and "+b+" is: "+result);
+
+// 6. [Write a program to print the circumference and area of a circle of radius entered by user by defining your own method.](https://beginnersbook.com/2014/01/java-program-to-calculate-area-and-circumference-of-circle/)
+        double r = sc.nextInt();
+        double result = circumference(r);
+        System.out.println("Circumference of a Circle is: "+ result);
+
+
+
+
+
+        sc.close();
+    }
+
+    static void max(int a, int b, int c){
+        if(a>b && a>c){
+            System.out.println(a+ " is a maximum number");
+        }
+        else if(b>a && b>c){
+            System.out.println(b+ " is a maximum number");
+        }
+        else{
+            System.out.println(c+ " is a maximum number");
+        }
+    }
+    static void min(int a, int b, int c){
+        if(a<b && a<c){
+            System.out.println(a+ " is a minimum number");
+        }
+        else if(b<a && b<c){
+            System.out.println(b+ " is a minimum number");
+        }
+        else
+            System.out.println(c+ " is a minimum number");
+    }
+
+    static void evenORodd(int a){
+        if(a%2==0){
+            System.out.println(a+ " is a even number");
+        }
+        else
+            System.out.println(a+ " is odd number");
+    }
+
+    static void eligible(int a){
+        if(a>=18){
+            System.out.println("Eligible to vote");
+        }
+        else
+            System.out.println("Not Eligible to vote");
+    }
+
+    static int sum(int a, int b){
+        return a+b;
+    }
+
+    static int product(int a, int b){
+        return a*b;
+    }
+
+    static double circumference(double r){
+        return 2*Math.PI*r;
     }
 }
 
 /*
-1. [Define two methods to print the maximum and the minimum number respectively among three numbers entered by the user.](https://www.java67.com/2019/05/how-to-find-largest-and-smallest-of-three-numbers-in-java.html)
-
-2. [Define a program to find out whether a given number is even or odd.](https://www.geeksforgeeks.org/java-program-to-check-if-a-given-integer-is-odd-or-even/)
-
-3. [A person is eligible to vote if his/her age is greater than or equal to 18. Define a method to find out if he/she is eligible to vote.](https://www.efaculty.in/java-programs/voting-age-program-in-java/)
-
-4. [Write a program to print the sum of two numbers entered by user by defining your own method.](https://code4coding.com/addition-of-two-numbers-in-java-using-method/)
-
-5. [Define a method that returns the product of two numbers entered by user.](https://code4coding.com/java-program-to-multiply-two-numbers-using-method/)
-
-6. [Write a program to print the circumference and area of a circle of radius entered by user by defining your own method.](https://beginnersbook.com/2014/01/java-program-to-calculate-area-and-circumference-of-circle/)
-
 7. [Define a method to find out if a number is prime or not.](https://www.geeksforgeeks.org/java-program-to-check-if-a-number-is-prime-or-not/)
 
 8. [Write a program that will ask the user to enter his/her marks (out of 100). Define a method that will display grades according to the marks entered as below:](https://www.techcrashcourse.com/2017/02/java-program-to-calculate-grade-of-students.html) <br/>
