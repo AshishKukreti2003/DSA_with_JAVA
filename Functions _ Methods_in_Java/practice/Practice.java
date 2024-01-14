@@ -38,13 +38,45 @@ public class Practice {
         // System.out.println("Product of "+a+ " and "+b+" is: "+result);
 
 // 6. [Write a program to print the circumference and area of a circle of radius entered by user by defining your own method.](https://beginnersbook.com/2014/01/java-program-to-calculate-area-and-circumference-of-circle/)
-        double r = sc.nextInt();
-        double result = circumference(r);
-        System.out.println("Circumference of a Circle is: "+ result);
+        // double r = sc.nextInt();
+        // double result = circumference(r);
+        // System.out.println("Circumference of a Circle is: "+ result);
 
+// 7. [Define a method to find out if a number is prime or not.](https://www.geeksforgeeks.org/java-program-to-check-if-a-number-is-prime-or-not/)
+        // if(primeORnot(5)){
+        //     System.out.println("Prime number");
+        // }
+        // else{
+        //     System.out.println("Not a prime number");
+        // }
 
+// 8. [Write a program that will ask the user to enter his/her marks (out of 100). Define a method that will display grades according to the marks entered as below:](https://www.techcrashcourse.com/2017/02/java-program-to-calculate-grade-of-students.html) 
+// Marks        Grade 
+// 91-100         AA 
+// 81-90          AB 
+// 71-80          BB 
+// 61-70          BC 
+// 51-60          CD 
+// 41-50          DD 
+// <=40          Fail 
+        // System.out.print("Enter your marks (out of 100): ");
+        // int marks = sc.nextInt();
+        // Grade(marks);
 
+// 9. [Write a program to print the factorial of a number by defining a method named 'Factorial'.](https://www.javatpoint.com/factorial-program-in-java)
+        // Factorial(4);
 
+// 10. [Write a function to find if a number is a palindrome or not. Take number as parameter.](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/)
+        // Palindrome(12121);
+
+// 11. [Write a function to check if a given triplet is a Pythagorean triplet or not.](https://www.geeksforgeeks.org/find-pythagorean-triplet-in-an-unsorted-array/) (A Pythagorean triplet is when the sum of the square of two numbers is equal to the square of the third number).
+        // PythagoreanTriplet(9,12,15);
+
+// 12. [Write a function that returns all prime numbers between two given numbers.](https://www.geeksforgeeks.org/program-to-find-prime-numbers-between-given-interval/)
+        AllPrime(1, 10);
+        
+// 13. [Write a function that returns the sum of first n natural numbers.](https://www.geeksforgeeks.org/program-find-sum-first-n-natural-numbers/)
+        // SumOfNatural(5);
 
         sc.close();
     }
@@ -98,43 +130,98 @@ public class Practice {
     static double circumference(double r){
         return 2*Math.PI*r;
     }
+
+    static boolean primeORnot(int a){
+        for(int i=2;i<a;i++){
+            if(a%i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    static void Grade(int marks){
+        if (marks >= 91 && marks <= 100) {
+            System.out.println("AA");
+        } else if (marks >= 81 && marks <= 90) {
+            System.out.println("AB");
+        } else if (marks >= 71 && marks <= 80) {
+            System.out.println("BB");
+        } else if (marks >= 61 && marks <= 70) {
+            System.out.println("BC");
+        } else if (marks >= 51 && marks <= 60) {
+            System.out.println("CD");
+        } else if (marks >= 41 && marks <= 50) {
+            System.out.println("DD");
+        } else if (marks <= 40) {
+            System.out.println("Fail");
+        } else {
+            System.out.println("Invalid marks entered");
+        }
+    }
+
+    static void Factorial(int n){
+        int count =1;
+        int pro = 1;
+        while (n>=count) {
+            pro*=count;
+            count++;
+        }
+        System.out.println(pro);
+    }
+
+    static void Palindrome(int n){
+        int org = n;
+        int result = 0;
+        while (n>0) {
+            int rem = n%10;
+            result = result*10+rem;
+            n /= 10;
+        }
+        if(result == org){
+            System.out.println("Palindrome number");
+        }
+        else{
+            System.out.println("Not a Palindrome number");
+        }
+    }
+
+    static void PythagoreanTriplet(int a, int b, int c){
+        int a_2 = a*a;
+        int b_2 = b*b;
+        int c_2 = c*c;
+        int sum = a_2 + b_2;
+        if( sum == c_2){
+            System.out.println("Given number are Pythagorean triplet");
+        }
+        else{
+            System.out.println("Given number are not Pythagorean triplet");
+        }
+    }
+
+    static void AllPrime(int a, int b){
+        for(int i=a;i<=b;i++){
+            if(i<=1){
+                System.out.print(" ");
+            }
+            else{
+                for(int j=2;j<i;j++){
+                    if(i%j==0){
+                        System.out.print(""); 
+                    }
+                }
+            }
+            System.out.print(i+" ");
+        }
+        System.out.println();
+    }
+
+    static void SumOfNatural(int n){
+        int sum =0;
+        for(int i=1;i<=n;i++){
+            sum+=i;
+        }
+        System.out.println(sum);
+    }
+
 }
-
-/*
-7. [Define a method to find out if a number is prime or not.](https://www.geeksforgeeks.org/java-program-to-check-if-a-number-is-prime-or-not/)
-
-8. [Write a program that will ask the user to enter his/her marks (out of 100). Define a method that will display grades according to the marks entered as below:](https://www.techcrashcourse.com/2017/02/java-program-to-calculate-grade-of-students.html) <br/>
-<pre> 
-Marks        Grade 
-91-100         AA 
-81-90          AB 
-71-80          BB 
-61-70          BC 
-51-60          CD 
-41-50          DD 
-<=40          Fail 
-</pre>
-
-9. [Write a program to print the factorial of a number by defining a method named 'Factorial'.](https://www.javatpoint.com/factorial-program-in-java)
-Factorial of any number n is represented by n! and is equal to 1 * 2 * 3 * .... * (n-1) *n. E.g.- <br/>
-<pre>
-4! = 1 * 2 * 3 * 4 = 24 
-3! = 3 * 2 * 1 = 6 
-2! = 2 * 1 = 2 
-Also, 
-1! = 1 
-0! = 1
-</pre>
-
-10. [Write a function to find if a number is a palindrome or not. Take number as parameter.](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/)
-
-11. Convert the programs in [flow of program](01-flow-of-program.md), [first java](02-first-java.md), [conditionals & loops](03-conditionals-loops.md) assignments into functions.
-
-12. [Write a function to check if a given triplet is a Pythagorean triplet or not.](https://www.geeksforgeeks.org/find-pythagorean-triplet-in-an-unsorted-array/) (A Pythagorean triplet is when the sum of the square of two numbers is equal to the square of the third number).
-
-13. [Write a function that returns all prime numbers between two given numbers.](https://www.geeksforgeeks.org/program-to-find-prime-numbers-between-given-interval/)
-
-14. [Write a function that returns the sum of first n natural numbers.](https://www.geeksforgeeks.org/program-find-sum-first-n-natural-numbers/)
- 
-
- */
