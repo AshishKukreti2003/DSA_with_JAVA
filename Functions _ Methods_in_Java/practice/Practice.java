@@ -73,7 +73,11 @@ public class Practice {
         // PythagoreanTriplet(9,12,15);
 
 // 12. [Write a function that returns all prime numbers between two given numbers.](https://www.geeksforgeeks.org/program-to-find-prime-numbers-between-given-interval/)
-        AllPrime(1, 10);
+        for(int i=1;i<=10;i++){
+            if(AllPrime(i)){
+                System.out.print(i+ " ");
+            }
+        }
         
 // 13. [Write a function that returns the sum of first n natural numbers.](https://www.geeksforgeeks.org/program-find-sum-first-n-natural-numbers/)
         // SumOfNatural(5);
@@ -199,21 +203,19 @@ public class Practice {
         }
     }
 
-    static void AllPrime(int a, int b){
-        for(int i=a;i<=b;i++){
-            if(i<=1){
-                System.out.print(" ");
-            }
-            else{
-                for(int j=2;j<i;j++){
-                    if(i%j==0){
-                        System.out.print(""); 
-                    }
-                }
-            }
-            System.out.print(i+" ");
+    static boolean AllPrime(int n){
+        if(n==0 || n==1){
+            return false;
         }
-        System.out.println();
+        if(n==2){
+            return true;
+        }
+        for(int i=2;i*i<=n;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
     }
 
     static void SumOfNatural(int n){
