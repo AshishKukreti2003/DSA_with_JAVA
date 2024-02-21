@@ -4,7 +4,11 @@ public class Main{
     public static void main(String[] args) {
         int arr[] = {1,4,3,5,2};
         bubbleSort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Bubble Sort: "+ Arrays.toString(arr));
+
+        int arr1[] = {1,4,3,5,5,2};
+        selectionSort(arr1);
+        System.out.println("Selection Sort: "+ Arrays.toString(arr1));
     }
 
     static void bubbleSort(int[] arr){
@@ -28,4 +32,19 @@ public class Main{
             }
         }
     }
+
+    static void selectionSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int maxIndex = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[maxIndex]) {
+                    maxIndex = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[maxIndex];
+            arr[maxIndex] = temp;
+        }
+    }
+    
 }
