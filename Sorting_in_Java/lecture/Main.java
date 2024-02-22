@@ -9,6 +9,10 @@ public class Main{
         int arr1[] = {1,4,3,5,5,2};
         selectionSort(arr1);
         System.out.println("Selection Sort: "+ Arrays.toString(arr1));
+
+        int arr3[] = {5,4,3,1,2};
+        insertionSort(arr3);
+        System.out.println("Insertion Sort: "+ Arrays.toString(arr3));
     }
 
     static void bubbleSort(int[] arr){
@@ -46,5 +50,22 @@ public class Main{
             arr[maxIndex] = temp;
         }
     }
+
+    static void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
     
+    static void insertionSort(int[] arr){
+        for(int i=0;i<arr.length-1;i++){
+            for(int j=i+1;j>0;j--){
+                if(arr[j] <arr[j-1]){
+                    swap(arr, j, j-1);
+                }
+                else
+                    break;
+            }
+        }
+    }
 }
