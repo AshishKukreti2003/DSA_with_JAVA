@@ -7,6 +7,8 @@ public class Main {
         pattern3(5);
         System.out.println();
         pattern4(5);
+        System.out.println();
+        pattern5(5);
     }
 
 
@@ -69,4 +71,30 @@ public class Main {
             }System.out.println();
         }
     }
+/*  5.
+    *
+    **
+    ***
+    ****
+    *****
+    ****
+    ***
+    **
+    *
+*/
+    static void pattern5(int n){
+        for(int i=1;i<2*n;i++){
+            int totalColInRow = i > n ? 2*n-i : i;
+            for(int j=1;j<=totalColInRow;j++){
+                System.out.print("* ");
+            }System.out.println();
+        }
+    }
+/*  6.
+         *
+        **
+       ***
+      ****
+     *****
+*/
 }
