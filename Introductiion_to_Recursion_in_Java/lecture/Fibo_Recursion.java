@@ -1,9 +1,11 @@
 public class Fibo_Recursion {
     public static void main(String[] args) {
-        for(int i=0;i<11;i++){
+        // for(int i=0;i<11;i++){
 
-            System.out.println(FiboFormula(i));
-        }
+        //     System.out.println(FiboFormula(i));
+        // }
+
+        System.out.println(FiboFormula(50));
     }
 
     static int FiboFormula(int n){
