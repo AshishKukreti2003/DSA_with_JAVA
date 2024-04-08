@@ -3,7 +3,17 @@ public class Nto1 {
         // fun(5);
         // System.out.println();
         // funRev(5);
-        funBoth(5);
+        // funBoth(5);
+        concept(5);
+    }
+
+    static void concept(int n){
+        if(n==0){
+            return;
+        }
+        System.out.println(n);
+        // concept(n--);
+        concept(--n);
     }
 
     static void fun(int n){
