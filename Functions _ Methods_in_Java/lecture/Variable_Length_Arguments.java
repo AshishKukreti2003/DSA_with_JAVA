@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Variable_Length_Arguments {
@@ -9,7 +8,7 @@ public class Variable_Length_Arguments {
     }
 
     static void mutliple(int a, int b, String ...s){
-        System.out.println(Arrays.toString());
+        System.out.println(Arrays.toString(s));
     }
     static void fun(int ...v){
         System.out.println(Arrays.toString(v));
