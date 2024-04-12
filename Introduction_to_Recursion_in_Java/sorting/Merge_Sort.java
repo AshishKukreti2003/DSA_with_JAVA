@@ -5,6 +5,10 @@ public class Merge_Sort {
         int[] arr = {9,6,7,3,5,1,3,7};
         arr = mergerSort(arr);
         System.out.println(Arrays.toString(arr));
+
+        int[] arr1 = {6,5,4,3,8,9,2};
+        mergeSort_InPlcae(arr1, 0, arr1.length);
+        System.out.println(Arrays.toString(arr1));
     }
 
     static int[] mergerSort(int[] arr) {
@@ -44,5 +48,49 @@ public class Merge_Sort {
         }
 
         return mix;
+    }
+
+    static void mergeSort_InPlcae(int[] arr, int s , int e){
+        if(e-s == 1){
+            return;
+        }
+
+        int mid = (e+s)/2;
+        mergeSort_InPlcae(arr, s, mid);
+        mergeSort_InPlcae(arr, mid, e);
+
+        merge_InPlace(arr, s, mid, e);
+    }
+
+    private static void merge_InPlace(int[] arr, int s, int mid, int e){
+        int[] mix = new int[e-s];
+        int i=s;
+        int j=mid;
+        int k=0;
+
+        while (i<mid && j<e) {
+            if(arr[i] < arr[j]){
+                mix[k] = arr[i];
+                i++;
+            }else{
+                mix[k] = arr[j];
+                j++;
+            }
+            k++;
+        }
+        while (i<mid){
+            mix[k] = arr[i];
+            i++;
+            k++;
+        } 
+        while (j<e) {
+            mix[k] = arr[j];
+            j++;
+            k++;
+        }
+
+        for(int l=0;l<mix.length;l++){
+            arr[l+s] = mix[l];
+        }
     }
 }
