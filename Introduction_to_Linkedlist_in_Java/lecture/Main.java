@@ -23,6 +23,8 @@ public class Main {
         // list.display();
         // System.out.println();
         // list.find(3);
+        // list.insertRecursion(4, 2);
+        // list.display();
 
         // DLL list = new DLL();
         // list.insertFirst(3);

@@ -37,6 +37,21 @@ class LL {
         size++;
     }
 
+    public void insertRecursion(int val, int index){
+        head = insertRecursion(val, index, head);
+    }
+
+    private Node insertRecursion(int val, int index, Node node){
+        if(index == 0){
+            Node temp = new Node(val,node);
+            size++;
+            return temp;
+        }
+
+        node.next = insertRecursion(val, index-1, node.next);
+        return node;
+    }
+
     public void insert(int val, int index){
         if(index == 0){
             insertFirst(val);
