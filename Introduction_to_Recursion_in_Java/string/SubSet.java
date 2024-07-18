@@ -4,11 +4,11 @@ import java.util.List;
 
 public class SubSet {
     public static void main(String[] args) {
-        // int[] arr = { 1, 2, 3 };
-        // List<List<Integer>> ans = subSet(arr);
-        // for (List<Integer> list : ans) {
-        // System.out.println(list);
-        // }
+        int[] arr = { 1, 2, 3 };
+        List<List<Integer>> ans = subSet(arr);
+        for (List<Integer> list : ans) {
+        System.out.println(list);
+        }
 
         int[] arr1 = { 1, 2, 2 };
         List<List<Integer>> ans1 = subSetDuplicate(arr1);
