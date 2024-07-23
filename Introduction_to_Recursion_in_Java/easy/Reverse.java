@@ -1,4 +1,3 @@
-import java.util.*;
 public class Reverse {
     static int sum = 0;
 
