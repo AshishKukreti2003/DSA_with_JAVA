@@ -48,7 +48,7 @@ public class Permutations {
         for(int i=0;i<=p.length();i++){
             String f = p.substring(0, i);
             String s = p.substring(i,p.length());
-            count+=permutationCount(s+ch+s, up.substring(1));
+            count+=permutationCount(f+ch+s, up.substring(1));
         }
         return count;
     }
