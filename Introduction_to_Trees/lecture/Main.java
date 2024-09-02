@@ -9,9 +9,16 @@ public class Main {
         // tree.prettyDisplay();
 
         BST tree = new BST();
-        int[] nums = {5,2,7,1,4,6,9,8,3,10};
-        tree.populate(nums);
+        int[] nums = {1,2,3,4,5,6,7,8,9,10};
+        // tree.populate(nums);
+        // tree.display();
+        tree.populateSorted(nums);
         tree.display();
+        tree.preorder();
+        System.out.println();
+        tree.inorder();
+        System.out.println();
+        tree.postorder();
     }
 }
  
