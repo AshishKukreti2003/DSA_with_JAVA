@@ -2,12 +2,12 @@
 
 - [Defanging an Ip address](https://leetcode.com/problems/defanging-an-ip-address/) => [Link](https://leetcode.com/submissions/detail/1191737753/)
 - [Shuffle String](https://leetcode.com/problems/shuffle-string/) => [Link](https://leetcode.com/submissions/detail/1191773881/)
-- [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) => [Link]()
-- [Count Items Matching a rule](https://leetcode.com/problems/count-items-matching-a-rule/) => [Link]()
+- [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) => [Link](https://leetcode.com/submissions/detail/1258840008/)
+- [Count Items Matching a rule](https://leetcode.com/problems/count-items-matching-a-rule/) => [Link](https://leetcode.com/submissions/detail/1155621155/)
 - [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) => [Link]()
 - [Check if two strings are equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/) => [Link](https://leetcode.com/submissions/detail/1199751018/)
-- [To Lower Case](https://leetcode.com/problems/to-lower-case/) => [Link]()
-- [Determine if string halves are alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) => [Link]()
+- [To Lower Case](https://leetcode.com/problems/to-lower-case/) => [Link](https://leetcode.com/submissions/detail/1234812959/)
+- [Determine if string halves are alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) => [Link](https://leetcode.com/submissions/detail/1234825527/)
 - [Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) => [Link]()
 - [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/) => [Link]()
 - [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) => [Link]()
@@ -24,7 +24,7 @@
 - [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) => [Link]()
 - [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) => [Link]()
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) => [Link]()
-- [Length of last word](https://leetcode.com/problems/length-of-last-word/) => [Link]()
+- [Length of last word](https://leetcode.com/problems/length-of-last-word/) => [Link](https://leetcode.com/submissions/detail/1226849701/)
 
 ## Medium
 
